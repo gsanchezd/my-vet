@@ -1,0 +1,669 @@
+
+
+Started GET "/" for ::1 at 2016-03-17 18:25:32 -0600
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (138.8ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (596.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (728.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-17 18:25:35 -0600
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/macbook/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (124.7ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.1ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/macbook/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (201.5ms)
+  [1m[36m (284.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (43.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateVeterinaries (20160210184526)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (105.9ms)[0m  [1mCREATE TABLE "veterinaries" ("id" serial primary key, "name" character varying, "address" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (17.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160210184526"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCustomers (20160310180710)
+  [1m[35m (15.8ms)[0m  BEGIN
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying, "email" character varying, "phone" character varying, "veterinary_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX  "index_customers_on_veterinary_id" ON "customers"  ("veterinary_id")
+  [1m[36m (97.3ms)[0m  [1mALTER TABLE "customers" ADD CONSTRAINT "fk_rails_72fe34057a"
+FOREIGN KEY ("veterinary_id")
+  REFERENCES "veterinaries" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160310180710"]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePets (20160310180817)
+  [1m[35m (16.7ms)[0m  BEGIN
+  [1m[36m (23.7ms)[0m  [1mCREATE TABLE "pets" ("id" serial primary key, "name" character varying, "breed" character varying, "age" character varying, "veterinary_id" integer, "customer_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (6.0ms)[0m  CREATE  INDEX  "index_pets_on_veterinary_id" ON "pets"  ("veterinary_id")
+  [1m[36m (1.5ms)[0m  [1mCREATE  INDEX  "index_pets_on_customer_id" ON "pets"  ("customer_id")[0m
+  [1m[35m (1.5ms)[0m  ALTER TABLE "pets" ADD CONSTRAINT "fk_rails_222a37aa79"
+FOREIGN KEY ("veterinary_id")
+  REFERENCES "veterinaries" ("id")
+
+  [1m[36m (1.3ms)[0m  [1mALTER TABLE "pets" ADD CONSTRAINT "fk_rails_96d52bdde0"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160310180817"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateUsers (20160310205459)
+  [1m[35m (16.7ms)[0m  BEGIN
+  [1m[36m (6.5ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160310205459"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddAdminToUser (20160310223014)
+  [1m[35m (30.2ms)[0m  BEGIN
+  [1m[36m (62.7ms)[0m  [1mALTER TABLE "users" ADD "admin" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160310223014"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddNameToUser (20160310223954)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "name" character varying[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "veterinary_id" integer
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160310223954"]]
+  [1m[35m (16.1ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (27.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'customers'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'pets'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'veterinaries'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2016-03-17 18:26:10 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5617ms (Views: 5579.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/css/animate.self-20f238cdc71e2f4cd0ab46282cc9893691724f1c6b190b84267e24a9dcb344cb.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/css/queries.self-b362281fbb2ea4d6042de735d033a4003b2f725f2996a7c72051154a4166f85c.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/css/bootstrap.self-fc22319bcce001e8eac9a5c12a829fa5d51743dbb8a31c9b40cf2f59d530dd15.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/css/flexslider.self-73adce96222b3661b3a6450962576bcd6e615b39728f55ef9fb3424e3b5c184f.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/css/bootstrap.min.self-c8d5c942f6af1547ec3198e764a26c0e10a419ba76d33169ed41ba46e79115ce.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/customers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/style.self-abf77432dbbf2c9e359fbfcacfc22659cd1dc0dda34b47ccdcb31f05426b595e.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/pets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/scaffolds.self-3cbbef3cb4f0add66638538b8f002002ca725e85810b20fb9d546a218a9e558e.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/application.self-eb04ffb3c0169b73dd0b5ad06ac1a5a0a9e8e62d1f03b52967c74e5a7681372b.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/css/styles.self-3613f1eb9ab2119873a2d03c126215d7de3242d297af5a00182b31fbe6b4876e.css?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/js/min/scripts-ck.self-6cd38124c30ae606ad07232d7474139ba1e7146fca6ec6c63e3659ef91ec2e0d.js?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/js/bootstrap.self-c8d853976ca268a5391a9470ebdcf3ba43e0b78936cdc925146afcb60a3116be.js?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/js/jquery.flexslider.self-d9f85e1e9e86d33b8d9acba2a8dd263baf4a968ea4ad953eac51dd0318e2d3dd.js?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/js/jquery.smooth-scroll.self-ae50f9a9b6b9669e9bdc2f07542450eb92b47c64c854e5b4615a5a78f1ab8404.js?body=1" for ::1 at 2016-03-17 18:26:16 -0600
+
+
+Started GET "/assets/js/waypoints.min.self-2bc4ab2bb3c68d3e658295b2d181d35b3bbf08e395120ce48c0439af20079937.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/js/modernizr.self-47c56b5db45deff17c54c37d67ca372b5770bd172d563f7a6a121164c767040d.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/js/scripts.self-7f7c4e978a92f819954bf59f15a496b9306adc045a3bacf1ea57f3789eb56de1.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/js/bootstrap.min.self-62f1594da76560472064bb913b117c6e0d2b1a3ac57b211d1313da3f1f3c1fd7.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/js/overlay.self-f167f34683168b8100bbdb7a4f11cd5680c00936bb9e7586b1d1acd84a87698b.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/pets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/customers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/application.self-e088abdec24c652728c331cc53f5d2286e096b6080fa2bacfba79c56847e932e.js?body=1" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/img/quienes_somos-5ea1b8d72199f2c64f3b874cc72cb36c0c7d432afeb627bbecbae3eab37f7c0d.png" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/img/pets-24b6ea759f0c3053ab27eee530a75d8a53ed01a9a0f8af6466f42531d799d4f4.jpg" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/img/h1-bg-03f2e5190a86dc08919fcab3d537a96bbcb344fe21861274eb9c1e69c30391df.png" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/assets/img/view-b4049142f1519b788aa55a00388871a8828f3517afe65d96ea04e0af620cd19f.jpg" for ::1 at 2016-03-17 18:26:17 -0600
+
+
+Started GET "/" for ::1 at 2016-03-17 18:32:42 -0600
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 807ms (Views: 805.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/animate.self-20f238cdc71e2f4cd0ab46282cc9893691724f1c6b190b84267e24a9dcb344cb.css?body=1" for ::1 at 2016-03-17 18:32:43 -0600
+
+
+Started GET "/assets/css/bootstrap.self-fc22319bcce001e8eac9a5c12a829fa5d51743dbb8a31c9b40cf2f59d530dd15.css?body=1" for ::1 at 2016-03-17 18:32:43 -0600
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for ::1 at 2016-03-17 18:32:43 -0600
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for ::1 at 2016-03-17 18:32:43 -0600
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for ::1 at 2016-03-17 18:32:43 -0600
+
+
+Started GET "/assets/css/bootstrap.min.self-c8d5c942f6af1547ec3198e764a26c0e10a419ba76d33169ed41ba46e79115ce.css?body=1" for ::1 at 2016-03-17 18:32:43 -0600
+
+
+Started GET "/assets/css/flexslider.self-73adce96222b3661b3a6450962576bcd6e615b39728f55ef9fb3424e3b5c184f.css?body=1" for ::1 at 2016-03-17 18:32:43 -0600
+
+
+Started GET "/assets/css/queries.self-b362281fbb2ea4d6042de735d033a4003b2f725f2996a7c72051154a4166f85c.css?body=1" for ::1 at 2016-03-17 18:32:43 -0600
+
+
+Started GET "/assets/customers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-17 18:32:43 -0600
+
+
+Started GET "/assets/scaffolds.self-3cbbef3cb4f0add66638538b8f002002ca725e85810b20fb9d546a218a9e558e.css?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/pets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/style.self-abf77432dbbf2c9e359fbfcacfc22659cd1dc0dda34b47ccdcb31f05426b595e.css?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/application.self-eb04ffb3c0169b73dd0b5ad06ac1a5a0a9e8e62d1f03b52967c74e5a7681372b.css?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/css/styles.self-e3dc42f1d9388d0903f129e6ce6f4ea9fbe12316de4ef024c53e6facd472237a.css?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/js/jquery.smooth-scroll.self-ae50f9a9b6b9669e9bdc2f07542450eb92b47c64c854e5b4615a5a78f1ab8404.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/js/bootstrap.self-c8d853976ca268a5391a9470ebdcf3ba43e0b78936cdc925146afcb60a3116be.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/js/bootstrap.min.self-62f1594da76560472064bb913b117c6e0d2b1a3ac57b211d1313da3f1f3c1fd7.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/js/jquery.flexslider.self-d9f85e1e9e86d33b8d9acba2a8dd263baf4a968ea4ad953eac51dd0318e2d3dd.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/js/scripts.self-7f7c4e978a92f819954bf59f15a496b9306adc045a3bacf1ea57f3789eb56de1.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/js/modernizr.self-47c56b5db45deff17c54c37d67ca372b5770bd172d563f7a6a121164c767040d.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/js/overlay.self-f167f34683168b8100bbdb7a4f11cd5680c00936bb9e7586b1d1acd84a87698b.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/js/min/scripts-ck.self-6cd38124c30ae606ad07232d7474139ba1e7146fca6ec6c63e3659ef91ec2e0d.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/js/waypoints.min.self-2bc4ab2bb3c68d3e658295b2d181d35b3bbf08e395120ce48c0439af20079937.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/customers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/pets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/application.self-e088abdec24c652728c331cc53f5d2286e096b6080fa2bacfba79c56847e932e.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/js/scripts.self-7f7c4e978a92f819954bf59f15a496b9306adc045a3bacf1ea57f3789eb56de1.js?body=1" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/img/view-b4049142f1519b788aa55a00388871a8828f3517afe65d96ea04e0af620cd19f.jpg" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/img/quienes_somos-5ea1b8d72199f2c64f3b874cc72cb36c0c7d432afeb627bbecbae3eab37f7c0d.png" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/img/pets-24b6ea759f0c3053ab27eee530a75d8a53ed01a9a0f8af6466f42531d799d4f4.jpg" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/assets/img/h1-bg-03f2e5190a86dc08919fcab3d537a96bbcb344fe21861274eb9c1e69c30391df.png" for ::1 at 2016-03-17 18:32:44 -0600
+
+
+Started GET "/" for ::1 at 2016-03-17 18:34:37 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 3107ms (Views: 2707.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.self-fc22319bcce001e8eac9a5c12a829fa5d51743dbb8a31c9b40cf2f59d530dd15.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/css/bootstrap.min.self-c8d5c942f6af1547ec3198e764a26c0e10a419ba76d33169ed41ba46e79115ce.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/css/flexslider.self-73adce96222b3661b3a6450962576bcd6e615b39728f55ef9fb3424e3b5c184f.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/css/animate.self-20f238cdc71e2f4cd0ab46282cc9893691724f1c6b190b84267e24a9dcb344cb.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/css/queries.self-b362281fbb2ea4d6042de735d033a4003b2f725f2996a7c72051154a4166f85c.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/css/styles.self-e3dc42f1d9388d0903f129e6ce6f4ea9fbe12316de4ef024c53e6facd472237a.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/customers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/pets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/scaffolds.self-3cbbef3cb4f0add66638538b8f002002ca725e85810b20fb9d546a218a9e558e.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/application.self-eb04ffb3c0169b73dd0b5ad06ac1a5a0a9e8e62d1f03b52967c74e5a7681372b.css?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/js/min/scripts-ck.self-6cd38124c30ae606ad07232d7474139ba1e7146fca6ec6c63e3659ef91ec2e0d.js?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/js/bootstrap.self-c8d853976ca268a5391a9470ebdcf3ba43e0b78936cdc925146afcb60a3116be.js?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/js/jquery.flexslider.self-d9f85e1e9e86d33b8d9acba2a8dd263baf4a968ea4ad953eac51dd0318e2d3dd.js?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/js/bootstrap.min.self-62f1594da76560472064bb913b117c6e0d2b1a3ac57b211d1313da3f1f3c1fd7.js?body=1" for ::1 at 2016-03-17 18:34:40 -0600
+
+
+Started GET "/assets/js/jquery.smooth-scroll.self-ae50f9a9b6b9669e9bdc2f07542450eb92b47c64c854e5b4615a5a78f1ab8404.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/js/modernizr.self-47c56b5db45deff17c54c37d67ca372b5770bd172d563f7a6a121164c767040d.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/js/overlay.self-f167f34683168b8100bbdb7a4f11cd5680c00936bb9e7586b1d1acd84a87698b.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/js/waypoints.min.self-2bc4ab2bb3c68d3e658295b2d181d35b3bbf08e395120ce48c0439af20079937.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/js/scripts.self-7f7c4e978a92f819954bf59f15a496b9306adc045a3bacf1ea57f3789eb56de1.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/customers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/pets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600
+
+
+Started GET "/assets/application.self-e088abdec24c652728c331cc53f5d2286e096b6080fa2bacfba79c56847e932e.js?body=1" for ::1 at 2016-03-17 18:34:41 -0600

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @customer.name %>
+</p>
+
+<p>
+  <strong>Correo Electrónico:</strong>
+  <%= @customer.email %>
+</p>
+
+<p>
+  <strong>Teléfono:</strong>
+  <%= @customer.phone %>
+</p>
+
+<%= link_to 'Editar', edit_customer_path(@customer), class:"btn btn-primary" %> |
+<%= link_to 'Regresar', customers_path, class:"btn btn-primary" %>
+
+<%= render "pets/form" %>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Raza</th>
+        <th>Edad</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @customer.pets.each do |pet| %>
+        <tr>
+          <td><%= pet.name %></td>
+          <td><%= pet.breed %></td>
+          <td><%= pet.age %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
