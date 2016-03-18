@@ -3,6 +3,6 @@ class Veterinary < ActiveRecord::Base
   has_many :pets
   has_many :customers
 
-  validates :name, :address, :phone, presence: true
+  validates :name, presence: true
   
 end

@@ -1,43 +1,32 @@
 
-  <!-- Top menu -->
-    <nav class="navbar navbar-fixed-top " role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> 
-        </div>
-<div class="efrain borralo">
-</div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="top-navbar-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><%= link_to "Inicio", root_path %><span class="sr-only">(current)</span></li>
-            <li><a class="scroll-link" href="#responsive">Quienes somos</a></li>
-            <li><a class="scroll-link" href="#intro">Nuestros servicios</a></li>
-            <li><a class="scroll-link" href="#contact">Contacto</a></li>
-            <li><%= link_to "Clientes", customers_path %></li>
-            
-            
+<!-- Top menu -->
+<nav class="navbar navbar-fixed-top " role="navigation">
+  <div class="container">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="top-navbar-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><%= link_to "Inicio", root_path %><span class="sr-only">(current)</span></li>
+        <li><a class="scroll-link" href="#responsive">¿Quiénes somos?</a></li>
+        <li><a class="scroll-link" href="#intro">Nuestros servicios</a></li>
+        <li><a class="scroll-link" href="#contact">Contacto</a></li>
+        <li><%= link_to "Clientes", customers_path %></li>
           <% if user_signed_in? %>
             <li><%= current_user.veterinary.name %></li>
             <li><%= current_user.email %></li>
             <li><%= link_to "Salir", destroy_user_session_path, method: :delete %></li>
           <% else %>
-            <li><%= link_to "Entrar", new_user_session_path %></li>
-          <% end %>
-        </ul>
-      </div>
-    </nav>
+              <li><%= link_to "Entrar", new_user_session_path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
     
     <section class="hero swag1" id="hero">
             <div class="container ">
               <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center inner">
-                  <h1 class="animated fadeInDown">Mi <span> Veterinaria</span></h1>
+                  <h1 class="animated fadeInDown">Mi <span>Veterinaria</span></h1>
                   <p class="animated fadeInUp delay-05s">Un sistema de administración eficaz para <em>clínicas veterinarias.</em></p>
                 </div>
               </div>
@@ -45,7 +34,7 @@
           </section>
         </header>
 
-        <section class="text-center" id="responsive">
+        <section class="text-center swag3" id="responsive">
           <div class="container-fluid nopadding responsive-services">
             <div class="wrapper">
               <div class="iphone">
@@ -60,7 +49,7 @@
                     <div class"flex-viewport">
                       <ul class="slides">
                         <li class="clone">
-                          <h1 class="arrowS">¿Quienes somos?</h1>
+                          <h1 class="arrowS">¿Quiénes somos?</h1>
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero. </p>
                           <p>
                           Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan. </p>
@@ -80,18 +69,18 @@
             </div>
           </div>
         </section>
-        <section class="intro text-center section-padding" id="intro">
+        <section class="intro text-center section-padding swag4" id="intro">
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2 ">
                 <h1 class="arrow">Nuestros servicios</h1>
-                <p>Sed a lorem quis neque interdum <a href="#">consequat ut sed sem</a>. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <p>Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="features text-center section-padding" id="features">
+        <section class="features text-center section-padding swag4" id="features">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -121,8 +110,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
                     primis in faucibus.</p>
                   </div>
-                  <div class="clearfix"></div>
-                </div>
+                  
               </div>
             </div>
           </div>
@@ -134,26 +122,25 @@
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
                 <h1>I got 99 Problems<span>but <em>design</em> 'aint one</span></h1>
-                <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
               </div>
             </div>
           </div>
-        </section>
-        <div class="swag text-center">
+        
+        
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <a href="#" class="ignite-btn">Ignite Your Passion</a>
+                <p class="ignite-btn">¡ Entendemos tu pasión !</p>
               </div>
             </div>
           </div>
-        </div>
-
+        
+        </section>
         
         <div class="row swag" id="contact">
         <div class="col-sm-6 contact-form fadeInUp">
-                      <h3>Necesitas información? Escríbenos tus dudas:</h3>
-                      <form role="form" action="assets/contact.php" method="post">
+                      <h3>Necesitas información? Escríbenos:</h3>
+                      <form role="form" action="#" method="post">
                         <div class="form-group">
                           <label class="sr-only" for="contact-email">Correo Electrónico</label>
                             <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
@@ -166,14 +153,14 @@
                             <label class="sr-only" for="contact-message">Mensaje</label>
                             <textarea name="message" placeholder="Mensaje..." class="contact-message form-control" id="contact-message"></textarea>
                           </div>
-                          <button type="submit" class="btn">Enviar</button>
+                          <button type="submit" class="btn btn-primary">Enviar</button>
                       </form>
                   </div>
               </div>
               
               
         <section class="dark-bg text-center section-padding contact-wrap" id="contact">
-          <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+          <a href="#top" class="up-btn" ><i class="fa fa-chevron-up"></i></a>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
