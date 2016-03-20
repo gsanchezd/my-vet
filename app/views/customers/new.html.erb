@@ -1,5 +1,12 @@
-<h1>New Customer</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', customers_path %>
+<section class="customers">
+  <body>
+  	<h1>Registra a un cliente nuevo</h1>
+  	  <div role="main" class="main-content">
+		<div class="autoform" id="login-edit">
+		<%= render 'form' %>
+		<%= link_to 'Regresar', customers_path, class: "btn btn-primary" %>
+		<p>* Todos los campos son obligatorios *</p>
+		</div>
+  	  </div>
+  </body>
+</section>

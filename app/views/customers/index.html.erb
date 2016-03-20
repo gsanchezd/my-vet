@@ -1,36 +1,34 @@
-
-<p id="notice"><%= notice %></p>
-
-<h1>Lista de clientes</h1>
-
-<div class="table-responsive">
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Correo Electrónico</th>
-        <th>Teléfono</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @customers.each do |customer| %>
-        <tr>
-          <td><%= customer.name %></td>
-          <td><%= customer.email %></td>
-          <td><%= customer.phone %></td>
-          <td><%= link_to 'Ver detalle', customer %></td>
-          <td><%= link_to 'Editar', edit_customer_path(customer) %></td>
-          <td><%= link_to 'Borrar', customer, method: :delete, data: { confirm: '¿Estás seguro de eliminar al cliente, se eliminarán todos sus datos?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
-
-<br>
-
-<%= link_to 'Nuevo Cliente', new_customer_path %>
-
-
+<section class="customers">
+  <div class="container">
+    <div class="customer-index">
+      <p id="notice"><%= notice %></p>
+      <h1>Lista de clientes</h1>
+      <br>
+      <%= link_to 'Nuevo Cliente', new_customer_path, class:"btn btn-primary" %>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Correo Electrónico</th>
+                <th>Teléfono</th>
+                <th colspan="3"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @customers.each do |customer| %>
+                <tr>
+                  <td><%= customer.name %></td>
+                  <td><%= customer.email %></td>
+                  <td><%= customer.phone %></td>
+                  <td><%= link_to 'Ver detalle', customer %></td>
+                  <td><%= link_to 'Editar', edit_customer_path(customer) %></td>
+                  <td><%= link_to 'Borrar', customer, method: :delete, data: { confirm: '¿Estás seguro de eliminar al cliente, se eliminarán todos sus datos?' } %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+</section>

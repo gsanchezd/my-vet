@@ -120,7 +120,7 @@ legend { border: 0; /* 1 */
 /* * 1. Corrects font size not being inherited in all browsers.
 * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5, *    and Chrome.
 * 3. Improves appearance and consistency in all browsers. */
-button, input, select, textarea { font-size: 100%; /* 1 */
+button, input, select, textarea { font-size: 100%; /* 1 */ border-radius: 5px;
 	margin: 0; /* 2 */
 	vertical-align: baseline; /* 3 */
 *vertical-align: middle; /* 3 */ }
@@ -190,9 +190,11 @@ h2::after { content: " "; border: solid 2px rgba(206, 131, 255, 0.6); display: b
 Navigation
 ========================================================================== */
 .navbar { background: rgba(206, 131, 255, 0.6); border: 0; }
-ul.navbar-nav { font-size: 18px; font-family: 'Play', sans-serif; }
-.navbar-collapse ul.navbar-nav li a { color: #fff; }
+ul.navbar-nav { font-size: 20px; font-family: 'Play', sans-serif; padding: 10px;}
+.navbar-collapse ul.navbar-nav li { color: #000080; padding: 10px; }
+.navbar-collapse ul.navbar-nav li a { color: #fff; text-decoration: none; }
 .navbar-collapse ul.navbar-nav li a:hover { background: none; color: #000080; }
+.navbar-form { position: absolute; top: 11%; right: 32%; }
 /* ==========================================================================
 Hero
 ========================================================================== */
@@ -295,7 +297,7 @@ Contact
 /* ==========================================================================
 Footer
 ========================================================================== */
-footer a { font-size: 1.2em; }
+footer a { font-size: 1.2em; color: #fff; }
 footer a:visited { color: #fff; }
 footer li a:hover { background: none; color: #000080; }
 footer p a:hover { background: none; color: #000080; }
@@ -321,16 +323,22 @@ Waypoints
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
 .wp3 { background-position: 10px 10px; height: 100%; }
 /* ==========================================================================
-sign_in
+Sign_in
 ========================================================================== */
 .authentication { min-width: 1020px; background: url(<%= asset_path "img/access.jpg"%>); no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; height: auto;}
 .clearfix { font-size: 20; text-align: center; }
 #login { width: 400px; margin: 80px auto; }
+#login-edit { width: 400px; margin: 10px auto; }
 .authentication h2 { font-size: 25px; }
 .authentication h2::after { border: none; }
 .autoform { border: solid 2px rgb(206, 131, 255); text-align: center; padding: 20px; border-radius: 30px; background: rgba(206, 131, 255, 0.4); }
 #email, #password { font-size: 18px; margin-bottom: 15px;  }
 .email, .password { font-size: 18px; margin-bottom: 15px; border-radius: 8px; }
 #remember_me { font-size: 16px; margin-bottom: 15px; }
-.btn { margin: 15px 0 15px 0; font-size: 18px; }
-
+.btn { margin: 15px 0 15px 0; font-size: 14px; }
+/* ==========================================================================
+Scaffold
+========================================================================== */
+.customers { padding-top: 10%; }
+.table-show { text-align: justify-all; }
+.btn-show { margin-left: 10%; }

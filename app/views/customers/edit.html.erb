@@ -1,6 +1,12 @@
-<h1>Editing Customer</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @customer %> |
-<%= link_to 'Back', customers_path %>
+<section class="customers">
+	<body>
+	  <h1>Editar cliente</h1>
+	  <div role="main" class="main-content">
+		<div class="autoform" id="login-edit">
+			<%= render 'form' %>
+			<%= link_to 'Ver detalle', @customer, class: "btn btn-primary" %> |
+			<%= link_to 'Regresar', customers_path, class: "btn btn-primary" %>
+		</div>
+  	  </div>
+  	</body>
+</section>

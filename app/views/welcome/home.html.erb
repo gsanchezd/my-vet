@@ -9,7 +9,6 @@
         <li><a class="scroll-link" href="#responsive">¿Quiénes somos?</a></li>
         <li><a class="scroll-link" href="#intro">Nuestros servicios</a></li>
         <li><a class="scroll-link" href="#contact">Contacto</a></li>
-        <li><%= link_to "Clientes", customers_path %></li>
           <% if user_signed_in? %>
             <li><%= current_user.veterinary.name %></li>
             <li><%= current_user.email %></li>
@@ -32,7 +31,7 @@
               </div>
             </div>
           </section>
-        </header>
+        
 
         <section class="text-center swag3" id="responsive">
           <div class="container-fluid nopadding responsive-services">

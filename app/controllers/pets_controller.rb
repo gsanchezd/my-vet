@@ -31,7 +31,7 @@ class PetsController < ApplicationController
 
     respond_to do |format|
       if @pet.save
-        format.html { redirect_to @customer, notice: 'Pet was successfully created.' }
+        format.html { redirect_to @customer, notice: 'Registro de mascota exitoso.' }
         format.json { render :show, status: :created, location: @pet }
       else
         format.html { render :new }
