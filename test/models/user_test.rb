@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "user must have a veterinary" do
+    user = users(:one)
+    user.veterinary = nil
+    assert_not user.valid?
+  end
 end
