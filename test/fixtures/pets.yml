@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: perro1
   breed: MyString
-  age: MyString
+  age: 5
+  customer: one
 
 two:
-  name: MyString
+  name: perro2
   breed: MyString
-  age: MyString
+  age: 6
+  customer: two
