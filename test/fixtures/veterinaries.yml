@@ -4,12 +4,8 @@ one:
   name: MyString
   address: MyString
   phone: MyString
-  customer_id: 
-  pet_id: 
 
 two:
   name: MyString
   address: MyString
   phone: MyString
-  customer_id: 
-  pet_id: 
