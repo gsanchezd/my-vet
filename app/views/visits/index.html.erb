@@ -1,0 +1,34 @@
+<section class="customers">
+  <div class="container">
+    <div class="customer-show">
+    	<h1>Lista de Visitas</h1>
+    	<p id="notice"><%= notice %></p>
+    	<td><%= link_to 'Nueva visita', new_customer_pet_visit_path(:customer_id, :pet_id), class:"btn btn-primary" %></td>
+    	<td><%= link_to 'Regresar', customers_path, class:"btn btn-primary" %></td>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+          	<tr>
+		      <th>Titulo</th>
+		      <th>Observaciones</th>
+		      <th>Fecha</th>
+		      <th colspan="3"></th>
+		    </tr>
+  		  </thead>
+		  <tbody> 
+		    <% @visits.each do |visit| %>
+		      <tr>
+		        <td><%= visit.title %></td>
+		        <td><%= visit.observation %></td>
+		        <td><%= visit.created_at %></td>
+		      </tr>
+		    <% end %>
+		  </tbody>
+		</table>
+	  </div>
+	</div>
+  </div>
+</section>
+
+
+

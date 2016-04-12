@@ -9,7 +9,7 @@ es:
       customer: Cliente
       pet: Mascota
       veterinary: Veterinaria
-    attributes:
+    attributes: 
       user:
         name: Nombre
         email: Correo Electrónico
@@ -26,6 +26,10 @@ es:
         name: Nombre
         address: Dirección
         phone: Teléfono
+      visit:
+        title: Titulo
+        observation: Observaciones
+        create_at: Fecha
     errors:
       messages:
         record_invalid: "La validación falló: %{errors}"

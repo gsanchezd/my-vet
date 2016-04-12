@@ -4,12 +4,19 @@ Rails.application.routes.draw do
 
   get 'welcome/home'
 
+  get '/visits/:id' => 'visits#index', as: :visit
+
+  post 'visits' => 'visits#create'
+
+
   # get '/:locale' => 'dashboard#index'
 
   devise_for :users
   
   resources :customers do
-    resources :pets
+    resources :pets do 
+      resources :visits
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
