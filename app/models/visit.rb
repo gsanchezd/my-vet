@@ -1,3 +1,3 @@
 class Visit < ActiveRecord::Base
-	belongs_to :Pet
+	belongs_to :pet
 end
